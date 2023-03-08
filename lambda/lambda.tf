@@ -56,7 +56,7 @@ resource "aws_lambda_function" "this" {
   handler          = "main.handler"
   filename         = data.archive_file.this.output_path
   source_code_hash = data.archive_file.this.output_base64sha256
-  timeout          = 30
+  timeout          = 45
   description      = "Lambda function parse request from API Gateway"
 
   tags = local.tags
