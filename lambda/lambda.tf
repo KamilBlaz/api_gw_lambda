@@ -12,6 +12,7 @@ resource "aws_lambda_permission" "api_gw" {
 
   source_arn = "${aws_api_gateway_rest_api.this.execution_arn}/*/*"
 }
+
 resource "aws_iam_role" "this" {
   name = "${var.project_name}-lambda"
   assume_role_policy = jsonencode({

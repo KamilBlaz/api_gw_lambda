@@ -16,5 +16,3 @@ def handler(event, context):
             'statusCode': 500,
             'body': "Install failed"
         }
-
-
