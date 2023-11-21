@@ -20,3 +20,4 @@ services:
       - AWS_PROFILE
       - AWS_STS_REGIONAL_ENDPOINTS=regional
       - AWS_SDK_LOAD_CONFIG=1
+
